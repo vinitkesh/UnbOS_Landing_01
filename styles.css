@@ -1,9 +1,17 @@
+.all{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
 body {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-display: block;
+    display: flexbox;
     align-items: center;
+    justify-content: center;
 }
 
 @keyframes gradient {
@@ -26,14 +34,14 @@ display: block;
 }
 
 .heading-text{
-    display:grid
+    display:flexbox;
     gap: 2%;
     text-align:center;
 }
 .welcome{
     font-family: 'Expletus Sans', sans-serif;
-font-family: 'Inter', sans-serif;
-color: beige;
+    font-family: 'Inter', sans-serif;
+    color: beige;
     font-size: 7vw;
     padding-top: 2vh;
 }
@@ -51,16 +59,14 @@ color: beige;
     text-align: center;
     display: inline;
 }
-.black-box1{
-    background-color: black;
-    width: 10px;
-}
 .logo {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: ;
     overflow:visible;
     padding-top: 5%;
+
 }
 .logo > div > div{ /*centering all layers*/
     display: flex;
@@ -197,11 +203,16 @@ color: beige;
 /* Add media queries for responsiveness */
 
 /* For screens smaller than 600px wide */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     .circles{
         scale: 0.5;
         margin: auto;
-        align-items: center;
+        display:flexbox;
+        justify-content:flex-end
+        overflow:visible;
+    }
+    body{
+        justify-content: center;
     }
 
     /* .circlesmall {
